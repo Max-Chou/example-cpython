@@ -8,7 +8,7 @@ def main():
         author="test",
         author_email="test@example.com",
         ext_modules=[
-            Extension("fputs", ["fputsmodule.c"])
+            Extension("myzip", ["myzipmodule.c"],libraries=['z'])
         ]
     )
     
